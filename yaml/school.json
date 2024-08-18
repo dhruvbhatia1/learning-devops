@@ -1,0 +1,18 @@
+{
+	"School": {
+		"Students": [
+			{
+				"Name": "John",
+				"Roll": "1",
+				"Marks": "90"
+			},
+            {
+                "Name": "Doe",
+                "Roll": "2",
+                "Marks": "80"
+            }
+		],
+		"_name": "KRM",
+		"_principal": "Someone"
+	}
+}

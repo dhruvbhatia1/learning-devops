@@ -1,0 +1,14 @@
+"apple": "i am a red fruit"
+1: "this is my number."
+---
+# lists
+- apple
+- mango
+- banana
+- APPLE # yaml is case sensitive
+---
+cities:
+  - new delhi
+  - mumbai
+  - bangalore
+...

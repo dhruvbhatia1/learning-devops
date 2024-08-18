@@ -1,0 +1,58 @@
+student: !!seq
+  -marks
+  -name
+  -rollno
+
+# like this also
+cities: [Delhi, Mumbai, Kolkata, Chennai]
+
+# some of the keys of the seq will be empty
+# sparse seq
+
+sparseSeq: !!seq
+  - Delhi
+  - !!seq
+    - 
+    - Mumbai
+  - Kolkata
+  - !!seq
+    - 
+    - Chennai
+
+# key value pairs are called maps
+
+name: !!map
+  marks: 100
+  name: "Rahul"
+  rollno: 1
+
+# pairs: keys may have duplicate values
+
+pairs: !!pairs
+  - job: "Software Engineer"
+  - job: "Software reliability Engineer"
+
+# !!set: set is a collection of unique elements
+
+names: !!set
+  ? Rahul
+  ? Dhruv
+  ? Kunal
+
+# !!omap: ordered map
+
+students: !!omap
+  - Rahul: 1
+  - Dhruv: 2
+  - Kunal: 3
+
+# reusing properties using anchors
+
+likings: &likes
+  fav fruit: mango
+  dislikes: papaya
+
+person1:
+  <<: *likes
+  name: Rahul
+  age: 20

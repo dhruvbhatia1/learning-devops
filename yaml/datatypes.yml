@@ -1,0 +1,30 @@
+# String variables
+myself: Dhruv Bhatia
+job: "Software Engineer"
+
+bio: |
+hey my name is Dhruv bhatia.
+I am a software engineer.
+
+# write a single line in multiple lines
+message: >
+  This is a single line
+  but it is written in multiple lines
+  using the '>' character.
+
+number: 1
+booleanValue: No # n, N, false, False, FALSE, off, Off, OFF are also considered as false
+# for true: y, Y, true, True, TRUE, on, On, ON are also considered as true
+
+# specify the type
+
+zero: !!int 0
+floatNumber: !!float 3.14
+binaryNumber: !!int 0b1010
+octalNumber: !!int 0777
+hexNumber: !!int 0xFF
+commaValue: !!int +540_000 # 540,000
+
+
+#null 
+nullValue: null # null, Null, NULL, ~ are considered as null
